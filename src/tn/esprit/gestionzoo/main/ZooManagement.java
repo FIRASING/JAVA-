@@ -1,3 +1,6 @@
+package tn.esprit.gestionzoo.main;
+ import tn.esprit.gestionzoo.entities.Animal;
+ import tn.esprit.gestionzoo.entities.ZOO;
 import java.util.Scanner;
 
 public class ZooManagement {
@@ -11,9 +14,10 @@ public class ZooManagement {
         nbrCages=k.nextInt();
         System.out.println(zooName+" contient "+nbrCages+"  cages");
         ZOO myZoo = new ZOO("hahha", "ariana", 7);
-        Animal lion = new Animal("kkkk", "rrr", 3, true);
-        Animal chien = new Animal("uuiu", "hhk", 5, false);
-        Animal gazelle = new Animal("gggj", "hhppp", 4, false);
+        Animal lion = new Animal("kkkk", "firas", 3, true);
+        Animal chien = new Animal("uuiu", "chadi", 5, false);
+        Animal gazelle = new Animal("gggj", "wral", 4, false);
+        Animal fakrounnnn = new Animal("jonnnnnger", "khaaaalti ", 4, false);
         myZoo.displayZoo();
         System.out.println(myZoo);
         System.out.println(lion);
