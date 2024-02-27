@@ -6,7 +6,8 @@ public class Animal {
     private int age;
     private boolean isMammal;
 
-    public Animal(String family, String name, int age, boolean isMammal) {
+    public Animal(String family, String name, int age, boolean isMammal)
+    {
         this.family = family;
         setName(name);
         setAge(age);
@@ -18,11 +19,10 @@ public class Animal {
     }
 
     public void setName(String name) {
-
-            this.name = name;
-
+            if (name.isBlank())
+                System.out.println("ne contient pas des caractéres ");
+        this.name = name;
     }
-
     public int getAge() {
         return age;
     }
