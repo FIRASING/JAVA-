@@ -51,5 +51,7 @@ public class Animal {
                 ", age=" + age +
                 ", isMammal=" + isMammal +
                 '}';
+
     }
+
 }

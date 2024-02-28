@@ -16,7 +16,7 @@ public class ZooManagement {
         nbrCages = k.nextInt();
         System.out.println(zooName + " contains " + nbrCages + " cages.");
 
-        ZOO myZoo = new ZOO("hahha", "ariana", 7);
+        ZOO myZoo = new ZOO(zooName, "ariana", nbrCages);
         Animal lion = new Animal("kkkk", "firas", 3, true);
         Animal chien = new Animal("uuiu", "chadi", 5, false);
         Animal gazelle = new Animal("gggj", "wral", 4, false);
@@ -35,8 +35,12 @@ public class ZooManagement {
         int h = myZoo.searchAnimal(gazelle);
         System.out.println("Search result for gazelle: " + h);
 
-        ZOO.Dolphin dolphin = new ZOO.Dolphin("Océan", 25.5f);
-        ZOO.Penguin penguin = new ZOO.Penguin("Antarctique", 15.0f);
-        ZOO.Terrestrial terrestrial = new ZOO.Terrestrial(4);
+        ZOO.Dolphin dolphin = myZoo.new Dolphin("Océan", 25.5f);
+        ZOO.Penguin penguin = myZoo.new Penguin("Antarctique", 15.0f);
+
+        myZoo.addAquaticAnimal(dolphin);
+        myZoo.addAquaticAnimal(penguin);
+
+        myZoo.displayAquaticAnimalsSwim();
     }
 }
