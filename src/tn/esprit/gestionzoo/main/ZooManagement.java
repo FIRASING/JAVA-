@@ -1,7 +1,6 @@
 package tn.esprit.gestionzoo.main;
 
-import tn.esprit.gestionzoo.entities.Animal;
-import tn.esprit.gestionzoo.entities.ZOO;
+import tn.esprit.gestionzoo.entities.*;
 
 import java.util.Scanner;
 
@@ -34,13 +33,12 @@ public class ZooManagement {
 
         int h = myZoo.searchAnimal(gazelle);
         System.out.println("Search result for gazelle: " + h);
+        aquatic at = new aquatic();
+        Dauphin dio =new Dauphin();
+        punguin pip= new punguin();
+        dio.swim();
+        at.swim();
 
-        ZOO.Dolphin dolphin = myZoo.new Dolphin("Océan", 25.5f);
-        ZOO.Penguin penguin = myZoo.new Penguin("Antarctique", 15.0f);
 
-        myZoo.addAquaticAnimal(dolphin);
-        myZoo.addAquaticAnimal(penguin);
 
-        myZoo.displayAquaticAnimalsSwim();
-    }
-}
+    }}
